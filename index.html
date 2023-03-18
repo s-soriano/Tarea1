@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Pequeños Pilotos</title>
 </head>
 <body>
     <header class="header">
@@ -17,13 +17,14 @@
             <ul>
                 <li><a href="#">Producto</a></li>
                 <li><a href="#">¿Quiénes somos?</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="form.html" target="_blank">Contacto</a></li>
             </ul>   
         </nav>
-        <button>
+        <button class="boton-icono">
         <img class="icono" src="/assets/imagens/icono1.png" alt="icono">
         </button>
     </header>
+    <main>
     <section class="container">
         <div class="texto">
             <h3>20% de descuento en tu segunda compra</h3><br>
@@ -37,21 +38,29 @@
     <!-- TARJETAS -->
     <section class="tarjetas">
         <div class="tarjeta1">
-            <img  width="250px" height="250px" src="/assets/imagens/producto2.png" alt="Descripción de la imagen">
+            <div class="containerimg">
+            <img   src="/assets/imagens/producto2.png" alt="Descripción de la imagen">
+            </div>
             <div class="card-content">
               <h2>Título de la tarjeta</h2>
               <p>Descripción de la tarjeta</p>
             </div>          
         </div>
         <div class="tarjeta2">
-            <img width="250px" height="250px" src="/assets/imagens/Producto.jpeg" alt="Descripción de la imagen">
+            <div class="containerimg">
+            <img  src="/assets/imagens/Producto.jpeg" alt="Descripción de la imagen">
+        </div>
             <div class="card-content">
               <h2>Título de la tarjeta</h2>
               <p>Descripción de la tarjeta</p>
             </div>
         </div>
+
         <div class="tarjeta3">
-            <img width="250px" height="250px" src="/assets/imagens/descripción.png" alt="Descripción de la imagen">
+        <div class="containerimg"> 
+            <img  src="/assets/imagens/descripción.png" alt="Descripción de la imagen">
+        </div>
+
             <div class="card-content">
               <h2>Título de la tarjeta</h2>
               <p>Descripción de la tarjeta</p>
@@ -60,7 +69,7 @@
     </section>
     <section class="container2">
         <div class="partes">
-            <img class="piesas" width="250px" height="250px" src="/assets/imagens/piesas.jpg" alt=""> 
+            <img class="piesas" src="/assets/imagens/piesas.jpg" alt=""> 
         </div>
         <div class="descripcion">
             <p> <strong>¡Haz que la bicicleta sea una aventura!</strong>  
@@ -69,8 +78,9 @@
         </div>
 
     </section>
+</main>
     <footer> 
-        <h3 class="h3footer">Siguenos en redes sociales</h3>
+        <h3 class="h3footer">Síguenos en redes sociales</h3>
      <a href="https://instagram.com/pequenospilotosbike1.0?igshid=YmMyMTA2M2Y=" target="_blank">
            <img src="/assets/iconos_footer/instagram_icon.png" alt="icono_instagram">
         </a>

@@ -9,8 +9,6 @@
       background-image: url('/assets/imagens/fondo.jpg');
       background-size:cover;
     }
-    
-  
 
   .header {
     display: flex;
@@ -27,9 +25,6 @@
   }
   
   .logo {
-    /* display: block; */
-    /* max-width: 100%; */
-    /* height: auto; */
     border-radius: 50%;
   }
   
@@ -40,12 +35,10 @@
     justify-content: space-between;
     text-transform: uppercase;
   }
-  
-  
+
   nav ul li a {
     color: #fbf9f9;
     text-decoration: none;
-    /* font-weight: bold; */
     font-size: 18px;
     transition: color 0.2s ease-in-out;
   }
@@ -54,25 +47,22 @@
     color: rgb(240, 244, 8);
   }
 
-
   @media (max-width: 768px) {
     nav {
       display: none;
     }
-
-
-
-    
     /* mostrar el botón de hamburguesa */
-    .icono {
+    .boton-icono {
       display: block;
+      visibility: visible;
     }
   }
   
   /* ocultar el botón de hamburguesa en pantallas más grandes */
   @media (min-width: 769px) {
-    .icono {
+    .boton-icono {
       display: none;
+      visibility: hidden;
     }
   }
   
@@ -111,8 +101,6 @@
       flex-direction: column;
       height: auto;
       margin-bottom: 20px;
-    
-
     }
     
   }
@@ -120,17 +108,27 @@
   .tarjetas{
     display: flex;
     justify-content: space-around;
-    /* max-width: 1100px; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     padding: 50px;
     height: 100%;
     margin-bottom: 200px;
-    /* background-color: white; */
 
   }
 
+  .containerimg{
+    width: 250px;
+    height: 250px;
+  }
+
+  .containerimg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.5%;
+  }
+  
   .tarjeta1{
     border: 3px solid rgb(7, 7, 7);
     align-items: center;
@@ -155,7 +153,6 @@
     border-radius: 10px;
   }
 
-  /* aqui el media de las tarjetas */
   @media (max-width: 850px) {
     .tarjetas {
       flex-direction: column;
@@ -172,8 +169,6 @@
     }
   }
 
-
-
   .container2{
     display: flex;
     justify-content: space-between;
@@ -182,31 +177,28 @@
     margin-right: 30px;
     margin-bottom: 10px;
     align-items: center;
-    /* padding: 20px; */
     height: 80vh;
     color: white;
   }
 
   .partes{
     width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 10px;
-    border: 2px solid black;
+  }
+  .piesas{
 
-
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2.5%;
+    border: 3px solid black;
   }
 
   .descripcion{
     line-height: 40px;
     text-transform: uppercase;
-    /* align-items: center;
-    justify-content: center; */
     padding-top: 60px;
     text-align: center;
   }
-
-
 
   @media (max-width: 768px) {
     .container2 {
@@ -214,7 +206,6 @@
       align-items: center;
       height: auto;
       margin-bottom: 20px;
-
     }
 
     div .piesas{
@@ -241,7 +232,6 @@
 
   .h3footer{
     color: white;
-
   }
 
   
